@@ -7,7 +7,7 @@ public class PrintChar extends Thread {
 
 	// Construct a thread with specified character and number of
 	// times to print the character
-	public PrintChar(char charToPrint, int times)	{
+	public PrintChar(char charToPrint, int times) {
 		this.charToPrint = charToPrint;
 		this.times = times;
 	}
@@ -15,7 +15,8 @@ public class PrintChar extends Thread {
 	// Override the run() method to tell the system
 	// what the thread will do
 	public void run() {
-		for (int i=1; i <= times; i++)
-		System.out.print(charToPrint);
+		for (int i = 1; i <= times; i++) {
+			System.out.print(charToPrint);
+		}
 	}
 }

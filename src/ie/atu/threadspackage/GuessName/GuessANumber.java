@@ -1,7 +1,7 @@
 package ie.atu.threadspackage.GuessName;
 
 //File Name : GuessANumber.java
-//Create a thread to extentd Thread
+// Create a thread to extend Thread
 
 public class GuessANumber extends Thread {
 	private int number;
@@ -19,6 +19,6 @@ public class GuessANumber extends Thread {
 			counter++;
 		} while (guess != number);
 		System.out.println(
-				"** Correct!" + this.getName() + "in" + counter + "guesses.**");
+				"** Correct! " + this.getName() + " in " + counter + " guesses. **");
 	}
 }
